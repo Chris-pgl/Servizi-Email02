@@ -11,7 +11,7 @@ import java.util.Optional;
 public class StudentService {
 
     static List<Student> students = Arrays.asList(
-            new Student("1", "John", "Walker", "john@walker.com"),
+            new Student("1", "Chris", "Pug", "yipepej558@djpich.com"),
             new Student("2", "Walter", "White", "walter@white.com"),
             new Student("3", "Samuel", "Dungeon", "samuel@dangeon.com"),
             new Student("4", "Ursula", "Von Der Leyen", "ursula@boss.eu")

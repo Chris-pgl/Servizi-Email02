@@ -30,7 +30,8 @@ public class NotificationController {
             emailService.sendTo(studentToNotify.getEmail(), payload.getTitle(), payload.getText());
             return ResponseEntity.status(HttpStatus.OK).build();
         }catch(Exception e){
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("The server is broken :(");
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("The server is broken :(" + e.getMessage());
         }
     }
 }
